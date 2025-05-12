@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Total spent -->
+    <TextView
+        android:id="@+id/totalSpentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Spent: R0.00"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Remaining budget -->
+    <TextView
+        android:id="@+id/remainingBudgetTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remaining Budget: R0.00"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+
+    <!-- Recent expenses title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recent Expenses"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp" />
+
+    <!-- RecyclerView for expenses -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recentExpensesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>
